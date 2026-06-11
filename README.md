@@ -4,7 +4,7 @@
 ## Overview
 This project implements a robust machine learning pipeline to automate the recognition of handwritten digits (0-9). Addressing the challenge of high variance in human handwriting, the system utilizes a hybrid unsupervised-supervised learning framework to accurately classify images. The final optimized model achieves a classification accuracy of **98.61%**.
 
----
+
 
 ## Dataset
 * **Source:** Optical Recognition of Handwritten Digits Dataset (Mini-MNIST) accessed via Scikit-Learn.
@@ -12,7 +12,7 @@ This project implements a robust machine learning pipeline to automate the recog
 * **Features:** Raw 8x8 bitmap images flattened into 64-dimensional feature vectors, with pixel intensities scaled.
 * **Classes:** 10 distinct classes representing the digits 0 through 9.
 
----
+
 
 ## Methodology & Pipeline
 
@@ -27,13 +27,13 @@ This project implements a robust machine learning pipeline to automate the recog
 ### 3. Supervised Classification (KNN)
 * **Model Optimization:** A K-Nearest Neighbors (KNN) classifier is optimized using Validation Curves to find the optimal neighbor count (k) that maximizes test accuracy and prevents overfitting.
 
----
+
 
 ## Results & Performance
 * **Accuracy:** The final model correctly predicted 355 out of 360 test samples, resulting in a **98.61%** accuracy score.
 * **Error Analysis:** Failure Mode Analysis revealed that misclassifications predominantly occurred in highly distorted edge cases (e.g., unusually slanted digits or broken loops) where patterns deviated significantly from cluster centroids.
 
----
+
 
 ## Tech Stack & Dependencies
 The following Python libraries were utilized for data manipulation, modeling, and visualization :
@@ -43,7 +43,7 @@ The following Python libraries were utilized for data manipulation, modeling, an
 * `seaborn`
 * `scikit-learn`
 
----
+
 
 ## Author
 **Harini P.** School of Computer Science and Engineering, VIT Chennai.
